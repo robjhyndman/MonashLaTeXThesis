@@ -1,0 +1,50 @@
+\documentclass{monashthesis}                          %% Final version. Double spaced & double-sided.
+%\documentclass[singlespace,singleside]{monashthesis} %% Save paper when producing drafts
+
+\title{Thesis title}
+\author{Sarah Baggart}
+\degrees{B.Sc.(Hons), University of Tangambalanga}
+\submitdate{April 2017}
+
+\bibliography{thesisrefs}
+
+\graphicspath{{figures/}}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\titlepage
+
+{\sf\tighttoc}
+
+\input abstract
+
+\input acknow
+
+\input declaration
+
+\input preface
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\newpage
+
+\input chap1
+%\input chap2
+%\input chap3
+%\input chap4
+%\input chap5
+%\input chap6
+%\input chap7
+
+
+\printbibliography[heading=bibintoc]
+
+% Appendices start here
+\appendix
+\input chap1
+
+
+\end{document}
